@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify Style Music App</title>
+
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="app-header">
+  <h2 class="logo">SOUND<span>WAVE</span></h2>
+
+  <!-- PROFILE ICON / PHOTO -->
+  <img src="img/pritish.jpg"
+       id="headerProfile"
+       class="header-profile"
+       onclick="openProfile()">
+</header>
+
+<!-- CATEGORY -->
+<div class="categories">
+  <span class="active">All</span>
+  <span>Party</span>
+  <span>Hip Hop</span>
+  <span>Sad</span>
+  <span>Blues</span>
+</div>
+
+<!-- SONG LIST -->
+<section class="song-list">
+  <div class="song" onclick="playSong(0)">
+    <img src="img/photo22.jpeg">
+    <div>
+      <h4>Deewniyat</h4>      
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(1)">
+    <img src="img/photo23.jpg">
+    <div>
+      <h4>Dil jhoom</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+<div class="song" onclick="playSong(2)">
+    <img src="img/photo27.jpg">
+    <div>
+      <h4>Chandni</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(3)">
+    <img src="img/photo24.jpg">
+    <div>
+      <h4>Ahista ahista</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(4)">
+    <img src="img/photo5.jpg">
+    <div>
+      <h4>Shayad</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(5)">
+    <img src="img/photo9.jpg">
+    <div>
+      <h4>Sanam teri kasam</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(6)">
+    <img src="img/photo28.jpg">
+    <div>
+      <h4>Saiyaara</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(7)">
+    <img src="img/photo26.jpg">
+    <div>
+      <h4>Badmas dil thag hai bada</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(8)">
+    <img src="img/photo17.jpeg">
+    <div>
+      <h4>Rasia</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(9)">
+    <img src="img/photo25.jpg">
+    <div>
+      <h4>90s Mix</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(10)">
+    <img src="img/photo4.jpg">
+    <div>
+      <h4>muskurane ki waja</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(11)">
+    <img src="img/photo18.jpeg">
+    <div>
+      <h4>Mera bhua</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(12)">
+    <img src="img/photo19.jpeg">
+    <div>
+      <h4>Lekhichi na tora</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(13)">
+    <img src="img/photo12.jpeg">
+    <div>
+      <h4>Maa mangala</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(14)">
+    <img src="img/photo30.jpg">
+    <div>
+      <h4>Kain janena</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(15)">
+    <img src="img/photo14.jpeg">
+    <div>
+      <h4>Hua hai aaj pehli baar</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(16)">
+    <img src="img/photo29.webp">
+    <div>
+      <h4>Humsafar</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(17)">
+    <img src="img/photo31.jpeg">
+    <div>
+      <h4>Janab e aali</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(18)">
+    <img src="img/photo7.jpg">
+    <div>
+      <h4>Humari adhuri kahani</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  <div class="song" onclick="playSong(19)">
+    <img src="img/photo20.jpeg">
+    <div>
+      <h4>Dil main ho tum </h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+  
+<div class="song" onclick="playSong(24)">
+    <img src="img/pritish.jpg">
+    <div>
+      <h4>muskurane ki waja</h4>
+      <p>Soundwave</p>
+    </div>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+  </div>
+</section>
+
+<!-- PLAYER -->
+<div class="player">
+  <img id="cover" src="img/pritish.jpg">
+  <div class="info">
+    <h4 id="title">PRITISH</h4>
+    <p id="artist"></p>
+  </div>
+
+  <input type="range" id="progress" value="0">
+
+  <div class="controls">
+    <i class="fa-solid fa-backward" onclick="prevSong()"></i>
+    <i class="fa-solid fa-play" id="playBtn"></i>
+    <i class="fa-solid fa-forward" onclick="nextSong()"></i>
+  </div>
+</div>
+
+<!-- AUDIO -->
+<audio id="audio"></audio>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <a href="home.html" class="user-link"></a>
+
+  <i class="fa-solid fa-house active"></i>
+
+  <i class="fa-solid fa-magnifying-glass"
+   onclick="window.location.href='search.html'"></i>
+
+
+  <i class="fa-solid fa-music" id="musicIcon"></i>
+  
+  <i class="fa-solid fa-user" onclick="handleUserClick()"></i>
+
+</a>
+
+</nav>
+
+<script src="js/home.js"></script>
+</body>
+</html>
